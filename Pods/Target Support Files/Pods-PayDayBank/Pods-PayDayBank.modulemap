@@ -1,0 +1,6 @@
+framework module Pods_PayDayBank {
+  umbrella header "Pods-PayDayBank-umbrella.h"
+
+  export *
+  module * { export * }
+}

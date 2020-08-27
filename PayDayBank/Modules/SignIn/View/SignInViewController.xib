@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="PayDayBank" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="i4T-Bh-9bG" id="FlH-Dz-l5I"/>
+                <outlet property="scrollView" destination="FaN-DO-w5I" id="j14-PQ-Fng"/>
+                <outlet property="tfEmail" destination="4Nl-Or-Gkd" id="7d0-DL-BfZ"/>
+                <outlet property="tfPassword" destination="DiE-xE-IpE" id="Frk-yV-RfU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaN-DO-w5I" customClass="KeyboardAvoidingScrollView" customModule="PayDayBank" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-W5-DrP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-34-Fzt">
+                                    <rect key="frame" x="47.666666666666657" y="252" width="280" height="138"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-Or-Gkd">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-xE-IpE">
+                                            <rect key="frame" x="0.0" y="54" width="280" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-xh-yiv">
+                                            <rect key="frame" x="113" y="108" width="54" height="30"/>
+                                            <state key="normal" title="Sign Up">
+                                                <color key="titleColor" name="baseAppColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didBtSignUpClicked:" destination="-1" eventType="touchUpInside" id="miM-OI-thc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="4Nl-Or-Gkd" firstAttribute="top" secondItem="oPe-34-Fzt" secondAttribute="top" id="07G-Ea-yUk"/>
+                                        <constraint firstItem="4Nl-Or-Gkd" firstAttribute="leading" secondItem="oPe-34-Fzt" secondAttribute="leading" id="Iay-71-TBK"/>
+                                        <constraint firstItem="RbT-xh-yiv" firstAttribute="centerX" secondItem="oPe-34-Fzt" secondAttribute="centerX" id="If9-KW-y6S"/>
+                                        <constraint firstAttribute="width" constant="280" id="PLI-lf-R7H"/>
+                                        <constraint firstItem="DiE-xE-IpE" firstAttribute="top" secondItem="4Nl-Or-Gkd" secondAttribute="bottom" constant="20" id="XpP-7k-MFd"/>
+                                        <constraint firstAttribute="bottom" secondItem="RbT-xh-yiv" secondAttribute="bottom" id="duG-jL-pu2"/>
+                                        <constraint firstAttribute="trailing" secondItem="DiE-xE-IpE" secondAttribute="trailing" id="h3F-b9-5BA"/>
+                                        <constraint firstAttribute="trailing" secondItem="4Nl-Or-Gkd" secondAttribute="trailing" id="i4d-XY-KHJ"/>
+                                        <constraint firstItem="DiE-xE-IpE" firstAttribute="leading" secondItem="oPe-34-Fzt" secondAttribute="leading" id="jJV-OK-Yfb"/>
+                                        <constraint firstItem="RbT-xh-yiv" firstAttribute="top" secondItem="DiE-xE-IpE" secondAttribute="bottom" constant="20" id="y5O-Qr-PgI"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9V4-Uu-868">
+                                    <rect key="frame" x="47.666666666666657" y="676" width="280" height="42"/>
+                                    <color key="backgroundColor" name="baseAppColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                    <state key="normal" title="Continue">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didBtContinueClicked:" destination="-1" eventType="touchUpInside" id="rBn-0Y-w22"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="oPe-34-Fzt" firstAttribute="centerY" secondItem="EFe-W5-DrP" secondAttribute="centerY" constant="-46" id="4KC-Ye-aqx"/>
+                                <constraint firstItem="9V4-Uu-868" firstAttribute="width" secondItem="oPe-34-Fzt" secondAttribute="width" id="4zW-mI-ZjW"/>
+                                <constraint firstAttribute="bottom" secondItem="9V4-Uu-868" secondAttribute="bottom" constant="16" id="Gs0-qY-IZE"/>
+                                <constraint firstItem="9V4-Uu-868" firstAttribute="centerX" secondItem="EFe-W5-DrP" secondAttribute="centerX" id="Gy1-Le-D6G"/>
+                                <constraint firstItem="oPe-34-Fzt" firstAttribute="centerX" secondItem="EFe-W5-DrP" secondAttribute="centerX" id="zIi-dg-Wbd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="EFe-W5-DrP" firstAttribute="top" secondItem="FaN-DO-w5I" secondAttribute="top" id="2If-fG-04e"/>
+                        <constraint firstAttribute="trailing" secondItem="EFe-W5-DrP" secondAttribute="trailing" id="Zbs-Nf-Cjm"/>
+                        <constraint firstAttribute="bottom" secondItem="EFe-W5-DrP" secondAttribute="bottom" id="gSZ-P2-IMS"/>
+                        <constraint firstItem="EFe-W5-DrP" firstAttribute="height" secondItem="FaN-DO-w5I" secondAttribute="height" id="iZi-1X-Q8f"/>
+                        <constraint firstItem="EFe-W5-DrP" firstAttribute="leading" secondItem="FaN-DO-w5I" secondAttribute="leading" id="uq7-1l-NJk"/>
+                        <constraint firstItem="EFe-W5-DrP" firstAttribute="width" secondItem="FaN-DO-w5I" secondAttribute="width" id="zTp-xu-IpF"/>
+                    </constraints>
+                </scrollView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-Bh-9bG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i4T-Bh-9bG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BOA-c4-dzt"/>
+                <constraint firstItem="FaN-DO-w5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="E12-lC-26f"/>
+                <constraint firstItem="FaN-DO-w5I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PSL-pJ-Ya0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FaN-DO-w5I" secondAttribute="trailing" id="RYg-bk-szY"/>
+                <constraint firstAttribute="bottom" secondItem="i4T-Bh-9bG" secondAttribute="bottom" id="bgE-ne-Dn9"/>
+                <constraint firstAttribute="trailing" secondItem="i4T-Bh-9bG" secondAttribute="trailing" id="ejH-E2-sc5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FaN-DO-w5I" secondAttribute="bottom" id="m6B-Op-VMf"/>
+                <constraint firstItem="i4T-Bh-9bG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yfm-5B-7AO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="baseAppColor">
+            <color red="0.17599999904632568" green="0.70899999141693115" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

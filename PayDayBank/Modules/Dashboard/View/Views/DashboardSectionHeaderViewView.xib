@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EDX-Go-KmE" customClass="DashboardSectionHeaderViewView" customModule="PayDayBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ed-rh-q1p">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 June" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qst-se-dyx">
+                    <rect key="frame" x="16" y="8" width="59.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2U-sK-sj0">
+                    <rect key="frame" x="16" y="0.0" width="359" height="0.5"/>
+                    <color key="backgroundColor" red="0.85478919740000003" green="0.85502481460000002" blue="0.85889303679999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="IsJ-H3-xLs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qN-MB-FYy">
+                    <rect key="frame" x="16" y="39.5" width="359" height="0.5"/>
+                    <color key="backgroundColor" red="0.85478919740000003" green="0.85502481460000002" blue="0.85889303679999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="ddk-Pg-9Hz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 June" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hAT-ap-TtH">
+                    <rect key="frame" x="307.5" y="10" width="51.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="G2U-sK-sj0" firstAttribute="top" secondItem="EDX-Go-KmE" secondAttribute="top" id="6bS-qv-gJp"/>
+                <constraint firstItem="8qN-MB-FYy" firstAttribute="leading" secondItem="EDX-Go-KmE" secondAttribute="leading" constant="16" id="CTV-Wv-SFR"/>
+                <constraint firstItem="7ed-rh-q1p" firstAttribute="top" secondItem="EDX-Go-KmE" secondAttribute="top" id="CrR-bu-3UJ"/>
+                <constraint firstAttribute="trailing" secondItem="G2U-sK-sj0" secondAttribute="trailing" id="VdV-G2-mNI"/>
+                <constraint firstItem="sxY-Fp-fNb" firstAttribute="trailing" secondItem="hAT-ap-TtH" secondAttribute="trailing" constant="16" id="VgE-Fg-Qog"/>
+                <constraint firstItem="7ed-rh-q1p" firstAttribute="leading" secondItem="EDX-Go-KmE" secondAttribute="leading" id="Vql-cf-jvy"/>
+                <constraint firstItem="qst-se-dyx" firstAttribute="centerY" secondItem="EDX-Go-KmE" secondAttribute="centerY" id="W48-n4-1lf"/>
+                <constraint firstAttribute="bottom" secondItem="7ed-rh-q1p" secondAttribute="bottom" id="ZIk-ED-0ip"/>
+                <constraint firstItem="G2U-sK-sj0" firstAttribute="leading" secondItem="sxY-Fp-fNb" secondAttribute="leading" constant="16" id="bah-t3-A7Y"/>
+                <constraint firstItem="qst-se-dyx" firstAttribute="leading" secondItem="sxY-Fp-fNb" secondAttribute="leading" constant="16" id="fcA-hf-Lbh"/>
+                <constraint firstItem="sxY-Fp-fNb" firstAttribute="bottom" secondItem="8qN-MB-FYy" secondAttribute="bottom" id="ob3-SH-JrO"/>
+                <constraint firstAttribute="trailing" secondItem="7ed-rh-q1p" secondAttribute="trailing" id="pec-gc-hRB"/>
+                <constraint firstItem="hAT-ap-TtH" firstAttribute="centerY" secondItem="EDX-Go-KmE" secondAttribute="centerY" id="qru-ss-P9w"/>
+                <constraint firstAttribute="trailing" secondItem="8qN-MB-FYy" secondAttribute="trailing" id="xC7-2Z-twB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sxY-Fp-fNb"/>
+            <connections>
+                <outlet property="lbAmount" destination="hAT-ap-TtH" id="Oq0-9D-N5R"/>
+                <outlet property="lbDate" destination="qst-se-dyx" id="wXT-GC-FFO"/>
+                <outlet property="vTopSeparator" destination="G2U-sK-sj0" id="9W2-Z8-7Ah"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="150"/>
+        </view>
+    </objects>
+</document>

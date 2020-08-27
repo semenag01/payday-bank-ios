@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dwu-cl-pbJ" customClass="TransactionListSectionHeaderView" customModule="PayDayBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrD-QI-dYm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 June" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fcr-Pc-xMg">
+                    <rect key="frame" x="16" y="8" width="59.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-Dy-nhr">
+                    <rect key="frame" x="16" y="0.0" width="359" height="0.5"/>
+                    <color key="backgroundColor" red="0.85478919740000003" green="0.85502481460000002" blue="0.85889303679999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="pJs-wI-QCG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De8-WS-Yes">
+                    <rect key="frame" x="16" y="39.5" width="359" height="0.5"/>
+                    <color key="backgroundColor" red="0.85478919740000003" green="0.85502481460000002" blue="0.85889303679999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="5f5-YZ-gcI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xrD-QI-dYm" secondAttribute="bottom" id="8cm-Lf-VcE"/>
+                <constraint firstAttribute="trailing" secondItem="xrD-QI-dYm" secondAttribute="trailing" id="CAE-Aq-OkV"/>
+                <constraint firstItem="8cp-Dy-nhr" firstAttribute="top" secondItem="dwu-cl-pbJ" secondAttribute="top" id="DJ8-C1-6t9"/>
+                <constraint firstItem="xrD-QI-dYm" firstAttribute="leading" secondItem="dwu-cl-pbJ" secondAttribute="leading" id="J0D-31-aVN"/>
+                <constraint firstItem="De8-WS-Yes" firstAttribute="leading" secondItem="dwu-cl-pbJ" secondAttribute="leading" constant="16" id="KCd-UY-Jk8"/>
+                <constraint firstItem="8cp-Dy-nhr" firstAttribute="leading" secondItem="oEn-hg-tur" secondAttribute="leading" constant="16" id="Wlg-03-1ND"/>
+                <constraint firstItem="fcr-Pc-xMg" firstAttribute="centerY" secondItem="dwu-cl-pbJ" secondAttribute="centerY" id="XlO-Zs-R7B"/>
+                <constraint firstAttribute="trailing" secondItem="De8-WS-Yes" secondAttribute="trailing" id="YjR-Y8-AbM"/>
+                <constraint firstAttribute="trailing" secondItem="8cp-Dy-nhr" secondAttribute="trailing" id="exh-qe-VZl"/>
+                <constraint firstItem="oEn-hg-tur" firstAttribute="bottom" secondItem="De8-WS-Yes" secondAttribute="bottom" id="i2K-WW-1N1"/>
+                <constraint firstItem="fcr-Pc-xMg" firstAttribute="leading" secondItem="oEn-hg-tur" secondAttribute="leading" constant="16" id="p2H-bF-tTn"/>
+                <constraint firstItem="xrD-QI-dYm" firstAttribute="top" secondItem="dwu-cl-pbJ" secondAttribute="top" id="twk-SZ-3Td"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="oEn-hg-tur"/>
+            <connections>
+                <outlet property="lbDate" destination="fcr-Pc-xMg" id="rcr-1E-z40"/>
+                <outlet property="vTopSeparator" destination="8cp-Dy-nhr" id="sd4-HU-qHf"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="150"/>
+        </view>
+    </objects>
+</document>
